@@ -1,0 +1,17 @@
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\bin\Debug\SerializableCalculator.exe.config
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\bin\Debug\SerializableCalculator.exe
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\bin\Debug\SerializableCalculator.pdb
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\App.g.cs
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator_MarkupCompile.cache
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator_MarkupCompile.lref
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\MainWindow.baml
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.g.resources
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.Properties.Resources.resources
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.csproj.GenerateResource.Cache
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.exe
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SerializableCalculator.pdb
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SaveWindow.g.cs
+C:\Users\Egor\SerializableCalculator\SerializableCalculator\obj\Debug\SaveWindow.baml
