@@ -23,6 +23,7 @@ namespace SerializableCalculator
         public partial class SaveWindow : Window
         {
                 ObservableCollection<Operation> saveoperations = new ObservableCollection<Operation>();
+                private string outputfile;
 
                 public SaveWindow(ObservableCollection<Operation> operationlist)
                 {
@@ -32,17 +33,24 @@ namespace SerializableCalculator
 
                 public void SaveToXml()
                 {
-                        using (Saver saver = new Saver())
+                        if (outputfile != null)
                         {
-                                saver.SaveToXml(saveoperations, SavePathTextBox.Text);
+                                using (Saver saver = new Saver())
+                                {
+                                        saver.SaveToXml(saveoperations, outputfile);
+                                }
                         }
                 }
 
                 public void SaveToText()
                 {
-                        using (Saver saver = new Saver())
+                        if (outputfile != null)
                         {
-                                saver.SaveToText(saveoperations, SavePathTextBox.Text);
+
+                                using (Saver saver = new Saver())
+                                {
+                                        saver.SaveToText(saveoperations, outputfile);
+                                }
                         }
                 }
 
@@ -71,6 +79,29 @@ namespace SerializableCalculator
                         this.Close();
 
                                 
+                }
+
+                public void OnSelectPathButtonClick(object sender, RoutedEventArgs e)
+                {
+                        SaveFileDialog sfd = new SaveFileDialog();
+                        
+                        switch(SaveToXmlPreference())
+                        {
+                                case true:
+                                        sfd.DefaultExt = ".xml";
+                                        break;
+                                case false:
+                                        sfd.DefaultExt = ".txt";
+                                        break;
+                        }
+
+                        if (sfd.ShowDialog() == true)
+                        {
+                                SavePathTextBox.Text = sfd.FileName;
+                                outputfile = sfd.FileName;
+                        }
+                        
+                        
                 }
         }
 }

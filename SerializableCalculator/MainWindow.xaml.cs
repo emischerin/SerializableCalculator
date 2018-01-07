@@ -158,6 +158,7 @@ namespace SerializableCalculator
 
                 }
 
+            
                 public void Invert()
                 {
                         
@@ -412,7 +413,7 @@ namespace SerializableCalculator
                 public void AddDivide()
                 {
                         if (CheckOperationSymbolsDublicates(UserInputBox.Text)) return;
-                        else  UserInputBox.Text = UserInputBox.Text + '/';
+                        else UserInputBox.Text = UserInputBox.Text + '/';
                 }
 
                 public void AddMultiply()
