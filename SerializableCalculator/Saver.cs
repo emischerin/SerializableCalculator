@@ -14,7 +14,8 @@ namespace SerializableCalculator
 {
         class Saver:IDisposable
         {
-                
+                 
+
                 bool disposed = false;
                 SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
 

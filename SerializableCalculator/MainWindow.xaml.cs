@@ -23,7 +23,7 @@ namespace SerializableCalculator
         public partial class MainWindow : Window
         {
                 ObservableCollection<Operation> operationlist = new ObservableCollection<Operation>();
-
+                AddPointHandler pointhandler = new AddPointHandler();
                
                 public MainWindow()
                 {
@@ -406,8 +406,11 @@ namespace SerializableCalculator
 
                 public void AddPoint()
                 {
-                        
-                       UserInputBox.Text = UserInputBox.Text + ',';
+                       if (pointhandler.AllowAddPoint(UserInputBox.Text))
+                        {
+                                UserInputBox.Text = UserInputBox.Text + ',';
+                        }
+                       
                 }
 
                 public void AddDivide()
